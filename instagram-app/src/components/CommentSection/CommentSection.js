@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 class CommentSection extends React.Component {
     constructor(props) {
         super(props);
@@ -13,7 +14,7 @@ class CommentSection extends React.Component {
                 {this.state.comments.map(comment => {
                     return (
                         <div className="comment">
-                            <h3>Comment From: {comment.username}</h3>
+                            <h3>{comment.username}</h3>
                             <p>{comment.text}</p> 
                         </div>                       
                     );
