@@ -1,0 +1,19 @@
+.engagement-container {
+    /* padding: 10px 0; */
+}
+
+.engagement {
+    padding: 10px 0;
+}
+
+#likes-counter {
+    padding-top: 7px;
+}
+
+.sm {
+    font-size: 28px;
+}
+
+#heart-image {
+    padding-right: 20px;
+}

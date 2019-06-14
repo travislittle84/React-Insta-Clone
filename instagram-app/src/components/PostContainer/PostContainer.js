@@ -9,17 +9,17 @@ function PostContainer(props) {
     return (
         <div className="post">
             <div className="post-header">
+                <img id="user-thumbnail" src={props.post.thumbnailUrl} alt="user thumbnail" />
                 <h3>{props.post.username}</h3>
             </div>
-            <PostContent contentImage={props.post.imageUrl}/>          
-            <CommentSection postComments={props.post.comments}/>
+            <PostContent post={props.post} contentImage={props.post.imageUrl}/>          
+            <CommentSection postLikes={props.post.likes} postComments={props.post.comments}/>
         </div>
     );
 }
 
 PostContainer.propTypes = {
-    post: 
-        PropTypes.shape({
+    post: PropTypes.shape({
             id: PropTypes.string.isRequired,
             username: PropTypes.string.isRequired,
             thumbnailUrl: PropTypes.string.isRequired,
@@ -33,11 +33,7 @@ PostContainer.propTypes = {
                     text: PropTypes.string
                 })
             )
-
-        })
-    
-    
-        
+        })       
 };
 
 export default PostContainer;
