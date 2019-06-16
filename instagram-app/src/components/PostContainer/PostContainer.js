@@ -12,8 +12,15 @@ function PostContainer(props) {
                 <img id="user-thumbnail" src={props.post.thumbnailUrl} alt="user thumbnail" />
                 <h3>{props.post.username}</h3>
             </div>
-            <PostContent post={props.post} contentImage={props.post.imageUrl}/>          
-            <CommentSection postLikes={props.post.likes} postComments={props.post.comments}/>
+            <PostContent contentImage={props.post.imageUrl}/>          
+            <CommentSection 
+                postId={props.postId}
+                addLike={props.addLike}
+                addNewComment={props.addNewComment}
+                postTimestamp={props.post.timestamp}
+                postLikes={props.post.likes}
+                postComments={props.post.comments}
+            />
         </div>
     );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './PostContent.css'
 
 function PostContent(props) {
@@ -9,5 +10,8 @@ function PostContent(props) {
 
     );
 };
+// PostContent.PropTypes = {
+//     contentImage: PropTypes.string.isRequired
+// }
 
 export default PostContent;
