@@ -1,0 +1,17 @@
+.search-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo-item {
+    font-size: 1.8rem;    
+}
+
+#logo-text {
+    font-family: 'Cookie', cursive;
+    font-size: 2.2rem;
+    font-weight: bold;
+    
+}
